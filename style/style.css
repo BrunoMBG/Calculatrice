@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d7dbdb;
+  height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2a2a;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px #000;
+}
+.calculator .screen {
+  width: 100%;
+  background-color: rgb(198, 237, 255);
+  height: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.calculator .keys {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(5, 50px);
+  grid-gap: 7px;
+}
+.calculator .keys button {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #a6a8a6;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 3px #464746;
+}
+.calculator .keys button:active {
+  box-shadow: 0 1px #a8a8a8;
+  transform: translateY(2px);
+}
+.calculator .keys button[data-key="13"] {
+  grid-column: span 2;
+  font-size: 35px;
+  background-color: #08c5d1;
+  font-weight: bold;
+}
+.calculator .keys button[data-key="8"] {
+  background-color: #a7001e;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
